@@ -1,0 +1,2 @@
+0,1,2,3,4,5,6,7,8,9,10,11,12,13
+"('id', 56677822)","('first_name', 'Victor')","('last_name', 'Wembanyama')","('position', 'F-C')","('height', '7-3')","('weight', '235')","('jersey_number', '1')","('college', 'Metropolitans 92')","('country', 'France')","('draft_year', 2023.0)","('draft_round', 1.0)","('draft_number', 1.0)","('team', NBATeam(id=27, conference='West', division='Southwest', city='San Antonio', name='Spurs', full_name='San Antonio Spurs', abbreviation='SAS'))","('team_id', None)"

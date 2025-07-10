@@ -20,6 +20,11 @@ class Fetcher:
     
     def to_csv(self, data, out_path):
         os.makedirs(os.path.dirname(out_path), exist_ok=True)
+
+        # Convert each object to a dictionary
+        if data and hasattr(data[0], "dict"):
+            data = [item.dict() for item in data]
+
         pd.DataFrame(data).to_csv(out_path, index=False)
         print(f"Saved to {out_path}")
 
@@ -28,10 +33,10 @@ if __name__ == "__main__":
     fetcher = Fetcher(api_key)
 
     teams = fetcher.get_teams()
-    fetcher.to_csv(teams, "data/raw/nba_teams.csv", index=False)
+    fetcher.to_csv(teams, "data/raw/nba_teams.csv")
 
     games = fetcher.get_games(season=2024)
-    fetcher.to_csv(games, "data/raw/nba_games_2024.csv", index=False)
+    fetcher.to_csv(games, "data/raw/nba_games_2024.csv")
 
     players = fetcher.get_players(search_name="wembanyama")
-    fetcher.to_csv(players, "data/raw/wemby.csv", index=False)
+    fetcher.to_csv(players, "data/raw/wemby.csv")

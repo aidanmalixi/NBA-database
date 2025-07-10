@@ -1,0 +1,46 @@
+id,conference,division,city,name,full_name,abbreviation
+1,East,Southeast,Atlanta,Hawks,Atlanta Hawks,ATL
+2,East,Atlantic,Boston,Celtics,Boston Celtics,BOS
+3,East,Atlantic,Brooklyn,Nets,Brooklyn Nets,BKN
+4,East,Southeast,Charlotte,Hornets,Charlotte Hornets,CHA
+5,East,Central,Chicago,Bulls,Chicago Bulls,CHI
+6,East,Central,Cleveland,Cavaliers,Cleveland Cavaliers,CLE
+7,West,Southwest,Dallas,Mavericks,Dallas Mavericks,DAL
+8,West,Northwest,Denver,Nuggets,Denver Nuggets,DEN
+9,East,Central,Detroit,Pistons,Detroit Pistons,DET
+10,West,Pacific,Golden State,Warriors,Golden State Warriors,GSW
+11,West,Southwest,Houston,Rockets,Houston Rockets,HOU
+12,East,Central,Indiana,Pacers,Indiana Pacers,IND
+13,West,Pacific,LA,Clippers,LA Clippers,LAC
+14,West,Pacific,Los Angeles,Lakers,Los Angeles Lakers,LAL
+15,West,Southwest,Memphis,Grizzlies,Memphis Grizzlies,MEM
+16,East,Southeast,Miami,Heat,Miami Heat,MIA
+17,East,Central,Milwaukee,Bucks,Milwaukee Bucks,MIL
+18,West,Northwest,Minnesota,Timberwolves,Minnesota Timberwolves,MIN
+19,West,Southwest,New Orleans,Pelicans,New Orleans Pelicans,NOP
+20,East,Atlantic,New York,Knicks,New York Knicks,NYK
+21,West,Northwest,Oklahoma City,Thunder,Oklahoma City Thunder,OKC
+22,East,Southeast,Orlando,Magic,Orlando Magic,ORL
+23,East,Atlantic,Philadelphia,76ers,Philadelphia 76ers,PHI
+24,West,Pacific,Phoenix,Suns,Phoenix Suns,PHX
+25,West,Northwest,Portland,Trail Blazers,Portland Trail Blazers,POR
+26,West,Pacific,Sacramento,Kings,Sacramento Kings,SAC
+27,West,Southwest,San Antonio,Spurs,San Antonio Spurs,SAS
+28,East,Atlantic,Toronto,Raptors,Toronto Raptors,TOR
+29,West,Northwest,Utah,Jazz,Utah Jazz,UTA
+30,East,Southeast,Washington,Wizards,Washington Wizards,WAS
+37,    ,,,Chicago Stags,Chicago Stags,CHS
+38,    ,,,St. Louis Bombers,St. Louis Bombers,BOM
+39,    ,,,Cleveland Rebels,Cleveland Rebels,CLR
+40,    ,,,Detroit Falcons,Detroit Falcons,DEF
+41,    ,,,Toronto Huskies,Toronto Huskies,HUS
+42,    ,,,Washington Capitols,Washington Capitols,WAS
+43,    ,,,Providence Steamrollers,Providence Steamrollers,PRO
+44,    ,,,Pittsburgh Ironmen,Pittsburgh Ironmen,PIT
+45,    ,,,Baltimore Bullets,Baltimore Bullets,BAL
+46,    ,,,Indianapolis Jets,Indianapolis Jets,JET
+47,    ,,,Anderson Packers,Anderson Packers,AND
+48,    ,,,Waterloo Hawks,Waterloo Hawks,WAT
+49,    ,,,Indianapolis Olympians,Indianapolis Olympians,INO
+50,    ,,,Denver Nuggets,Denver Nuggets,DN
+51,    ,,,Sheboygan Redskins,Sheboygan Redskins,SHE

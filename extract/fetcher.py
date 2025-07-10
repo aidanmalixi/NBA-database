@@ -27,11 +27,11 @@ if __name__ == "__main__":
     api_key = "0cebf21e-052e-460d-ae94-110a22d5e1a6"
     fetcher = Fetcher(api_key)
 
-    # teams = fetcher.get_teams()
-    # fetcher.to_csv(teams, "data/raw/nba_teams.csv")
+    teams = fetcher.get_teams()
+    fetcher.to_csv(teams, "data/raw/nba_teams.csv", index=False)
 
-    # games = fetcher.get_games(season=2024)
-    # fetcher.to_csv(games, "data/raw/nba_games_2024.csv")
+    games = fetcher.get_games(season=2024)
+    fetcher.to_csv(games, "data/raw/nba_games_2024.csv", index=False)
 
     players = fetcher.get_players(search_name="wembanyama")
-    fetcher.to_csv(players, "data/raw/wemby.csv")
+    fetcher.to_csv(players, "data/raw/wemby.csv", index=False)

@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: hello_test
+    description: "A simple test model that returns hello."
+    columns:
+      - name: message
+        description: "A simple hello message."
+      - name: created_at
+        description: "Timestamp when the row was created."

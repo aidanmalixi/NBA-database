@@ -425,3 +425,660 @@ click.exceptions.Abort
 [0m13:16:28.715832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112040790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102ddb110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111cc2990>]}
 [0m13:16:28.716274 [debug] [MainThread]: Flushing usage events
 [0m13:16:28.869030 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:51:52.652673 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002915BA628A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002915B64C1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002915B64FE90>]}
+
+
+============================== 14:51:52.659183 | d52c6625-a48a-42e7-a7f4-89cf9b5d7250 ==============================
+[0m14:51:52.659183 [info ] [MainThread]: Running with dbt=1.10.3
+[0m14:51:52.659183 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\chris\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:51:52.684905 [info ] [MainThread]: dbt version: 1.10.3
+[0m14:51:52.687624 [info ] [MainThread]: python version: 3.12.1
+[0m14:51:52.687624 [info ] [MainThread]: python path: C:\Python312\python.exe
+[0m14:51:52.689033 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m14:51:52.690702 [info ] [MainThread]: Using profiles dir at C:\Users\chris\.dbt
+[0m14:51:52.691998 [info ] [MainThread]: Using profiles.yml file at C:\Users\chris\.dbt\profiles.yml
+[0m14:51:52.691998 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml
+[0m14:51:52.691998 [info ] [MainThread]: Configuration:
+[0m14:51:52.691998 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m14:51:52.691998 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:51:52.691998 [info ] [MainThread]: Required dependencies:
+[0m14:51:52.696018 [debug] [MainThread]: Executing "git --help"
+[0m14:51:52.722255 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:51:52.722255 [debug] [MainThread]: STDERR: "b''"
+[0m14:51:52.724054 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:51:52.724054 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m14:51:52.724054 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m14:51:52.724054 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\chris\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:51:52.724054 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml> not found
+
+[0m14:51:52.724054 [debug] [MainThread]: Command `dbt debug` failed at 14:51:52.724054 after 0.21 seconds
+[0m14:51:52.728879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002915C1F15B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002915C387290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002915BAEF680>]}
+[0m14:51:52.728879 [debug] [MainThread]: Flushing usage events
+[0m14:51:52.800882 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:01:45.320452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C959C910D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C959C93590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C956FBF080>]}
+
+
+============================== 15:01:45.326674 | ba58820c-6f10-4186-9bb5-82f747cc0072 ==============================
+[0m15:01:45.326674 [info ] [MainThread]: Running with dbt=1.10.3
+[0m15:01:45.326674 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\chris\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:01:45.347935 [info ] [MainThread]: dbt version: 1.10.3
+[0m15:01:45.349137 [info ] [MainThread]: python version: 3.12.1
+[0m15:01:45.349794 [info ] [MainThread]: python path: C:\Python312\python.exe
+[0m15:01:45.350823 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:01:45.575574 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m15:01:45.575574 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m15:01:45.643976 [info ] [MainThread]: Using profiles dir at C:\Users\chris\.dbt
+[0m15:01:45.643976 [info ] [MainThread]: Using profiles.yml file at C:\Users\chris\.dbt\profiles.yml
+[0m15:01:45.643976 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml
+[0m15:01:45.643976 [info ] [MainThread]: Configuration:
+[0m15:01:45.643976 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m15:01:45.643976 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:01:45.654398 [info ] [MainThread]: Required dependencies:
+[0m15:01:45.654398 [debug] [MainThread]: Executing "git --help"
+[0m15:01:45.687838 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:01:45.687838 [debug] [MainThread]: STDERR: "b''"
+[0m15:01:45.687838 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:01:45.687838 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m15:01:45.687838 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:01:45.687838 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "nba_project", target "dev" invalid: 'port' is a required property
+
+
+[0m15:01:45.687838 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml> not found
+
+[0m15:01:45.696335 [debug] [MainThread]: Command `dbt debug` failed at 15:01:45.696335 after 0.51 seconds
+[0m15:01:45.696335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C959FA9A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C959DDA2A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C959F3F740>]}
+[0m15:01:45.696335 [debug] [MainThread]: Flushing usage events
+[0m15:01:45.803441 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:04:34.317670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135C7DB30E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135C7DB0260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135C7DB01D0>]}
+
+
+============================== 15:04:34.317670 | 565bece3-940f-4470-a57d-316c5e38ec49 ==============================
+[0m15:04:34.317670 [info ] [MainThread]: Running with dbt=1.10.3
+[0m15:04:34.323794 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\chris\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:04:34.347723 [info ] [MainThread]: dbt version: 1.10.3
+[0m15:04:34.347723 [info ] [MainThread]: python version: 3.12.1
+[0m15:04:34.347723 [info ] [MainThread]: python path: C:\Python312\python.exe
+[0m15:04:34.347723 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:04:34.528490 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m15:04:34.528490 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m15:04:34.592641 [info ] [MainThread]: Using profiles dir at C:\Users\chris\.dbt
+[0m15:04:34.596855 [info ] [MainThread]: Using profiles.yml file at C:\Users\chris\.dbt\profiles.yml
+[0m15:04:34.597661 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml
+[0m15:04:34.599387 [info ] [MainThread]: adapter type: redshift
+[0m15:04:34.599872 [info ] [MainThread]: adapter version: 1.9.5
+[0m15:04:34.600455 [info ] [MainThread]: Configuration:
+[0m15:04:34.600455 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:04:34.601458 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:04:34.602292 [info ] [MainThread]: Required dependencies:
+[0m15:04:34.602292 [debug] [MainThread]: Executing "git --help"
+[0m15:04:34.625764 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:04:34.625764 [debug] [MainThread]: STDERR: "b''"
+[0m15:04:34.625764 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:04:34.625764 [info ] [MainThread]: Connection:
+[0m15:04:34.629115 [info ] [MainThread]:   host: nba-workgroup.565689723912.us-east-1.redshift-serverless.amazonaws.com
+[0m15:04:34.629115 [info ] [MainThread]:   user: chrisms
+[0m15:04:34.629953 [info ] [MainThread]:   port: 5439
+[0m15:04:34.630956 [info ] [MainThread]:   database: dev
+[0m15:04:34.630956 [info ] [MainThread]:   method: iam
+[0m15:04:34.631956 [info ] [MainThread]:   cluster_id: nba-workgroup
+[0m15:04:34.632956 [info ] [MainThread]:   iam_profile: None
+[0m15:04:34.633374 [info ] [MainThread]:   schema: nba-data
+[0m15:04:34.633374 [info ] [MainThread]:   sslmode: prefer
+[0m15:04:34.633374 [info ] [MainThread]:   region: us-east-1
+[0m15:04:34.633374 [info ] [MainThread]:   sslmode: prefer
+[0m15:04:34.633374 [info ] [MainThread]:   region: us-east-1
+[0m15:04:34.633374 [info ] [MainThread]:   autocreate: False
+[0m15:04:34.633374 [info ] [MainThread]:   db_groups: []
+[0m15:04:34.633374 [info ] [MainThread]:   ra3_node: False
+[0m15:04:34.633374 [info ] [MainThread]:   connect_timeout: None
+[0m15:04:34.633374 [info ] [MainThread]:   role: None
+[0m15:04:34.633374 [info ] [MainThread]:   retries: 1
+[0m15:04:34.633374 [info ] [MainThread]:   retry_all: False
+[0m15:04:34.633374 [info ] [MainThread]:   autocommit: True
+[0m15:04:34.633374 [info ] [MainThread]:   access_key_id: None
+[0m15:04:34.633374 [info ] [MainThread]:   is_serverless: None
+[0m15:04:34.633374 [info ] [MainThread]:   serverless_work_group: None
+[0m15:04:34.633374 [info ] [MainThread]:   serverless_acct_id: None
+[0m15:04:34.633374 [info ] [MainThread]: Registered adapter: redshift=1.9.5
+[0m15:04:34.842326 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m15:04:34.842326 [debug] [MainThread]: Using redshift connection "debug"
+[0m15:04:34.842326 [debug] [MainThread]: On debug: select 1 as id
+[0m15:04:34.842326 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:04:34.842326 [debug] [MainThread]: Redshift adapter: Connecting to Redshift with 'iam' credentials method
+[0m15:04:34.842326 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m15:04:37.046626 [debug] [MainThread]: Redshift adapter: Error running SQL: select 1 as id
+[0m15:04:37.046626 [debug] [MainThread]: Redshift adapter: Rolling back transaction.
+[0m15:04:37.046626 [debug] [MainThread]: Redshift adapter: Not retrying error: Database Error
+  Unable to locate credentials
+[0m15:04:37.046626 [debug] [MainThread]: On debug: No close available on handle
+[0m15:04:37.046626 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m15:04:37.046626 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:04:37.046626 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml> not found
+
+[0m15:04:37.046626 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Unable to locate credentials
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:04:37.062461 [debug] [MainThread]: Command `dbt debug` failed at 15:04:37.062461 after 2.90 seconds
+[0m15:04:37.062461 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:04:37.062461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135C8032F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135C9D82360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135C80C87D0>]}
+[0m15:04:37.062461 [debug] [MainThread]: Flushing usage events
+[0m15:04:37.166742 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:09:04.096817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B13CD83050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B13CFC9280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B13CA8B6E0>]}
+
+
+============================== 15:09:04.102581 | d6856b67-dd75-4877-8862-db293e9373e3 ==============================
+[0m15:09:04.102581 [info ] [MainThread]: Running with dbt=1.10.3
+[0m15:09:04.102581 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:/Users/chris/Downloads/NBAProject/NBA-database/transform', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug --profiles-dir C:/Users/chris/Downloads/NBAProject/NBA-database/transform', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:09:04.134991 [info ] [MainThread]: dbt version: 1.10.3
+[0m15:09:04.135980 [info ] [MainThread]: python version: 3.12.1
+[0m15:09:04.136981 [info ] [MainThread]: python path: C:\Python312\python.exe
+[0m15:09:04.137980 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:09:04.137980 [info ] [MainThread]: Using profiles dir at C:/Users/chris/Downloads/NBAProject/NBA-database/transform
+[0m15:09:04.137980 [info ] [MainThread]: Using profiles.yml file at C:/Users/chris/Downloads/NBAProject/NBA-database/transform\profiles.yml
+[0m15:09:04.137980 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml
+[0m15:09:04.137980 [info ] [MainThread]: Configuration:
+[0m15:09:04.137980 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m15:09:04.137980 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:09:04.137980 [info ] [MainThread]: Required dependencies:
+[0m15:09:04.137980 [debug] [MainThread]: Executing "git --help"
+[0m15:09:04.180103 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:09:04.180103 [debug] [MainThread]: STDERR: "b''"
+[0m15:09:04.180103 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:09:04.180103 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m15:09:04.180103 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:09:04.180103 [info ] [MainThread]: dbt looked for a profiles.yml file in C:/Users/chris/Downloads/NBAProject/NBA-database/transform\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:09:04.180103 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml> not found
+
+[0m15:09:04.186644 [debug] [MainThread]: Command `dbt debug` failed at 15:09:04.186141 after 0.29 seconds
+[0m15:09:04.187546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B13C441550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B13BA66540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B13CC1F770>]}
+[0m15:09:04.187546 [debug] [MainThread]: Flushing usage events
+[0m15:09:04.306539 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:10:37.049812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001626B8E27B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001626E787DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001626E787C20>]}
+
+
+============================== 15:10:37.058385 | 2413cb99-0c49-410c-b6fb-1439f054e53f ==============================
+[0m15:10:37.058385 [info ] [MainThread]: Running with dbt=1.10.3
+[0m15:10:37.061530 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:/Users/chris/Downloads/NBAProject/NBA-database/transform', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:10:37.102067 [info ] [MainThread]: dbt version: 1.10.3
+[0m15:10:37.102067 [info ] [MainThread]: python version: 3.12.1
+[0m15:10:37.102067 [info ] [MainThread]: python path: C:\Python312\python.exe
+[0m15:10:37.102067 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:10:37.102067 [info ] [MainThread]: Using profiles dir at C:/Users/chris/Downloads/NBAProject/NBA-database/transform
+[0m15:10:37.102067 [info ] [MainThread]: Using profiles.yml file at C:/Users/chris/Downloads/NBAProject/NBA-database/transform\profiles.yml
+[0m15:10:37.102067 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml
+[0m15:10:37.102067 [info ] [MainThread]: Configuration:
+[0m15:10:37.102067 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m15:10:37.102067 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:10:37.117036 [info ] [MainThread]: Required dependencies:
+[0m15:10:37.118901 [debug] [MainThread]: Executing "git --help"
+[0m15:10:37.158421 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:10:37.158421 [debug] [MainThread]: STDERR: "b''"
+[0m15:10:37.168001 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:10:37.169002 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m15:10:37.170001 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:10:37.171000 [info ] [MainThread]: dbt looked for a profiles.yml file in C:/Users/chris/Downloads/NBAProject/NBA-database/transform\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:10:37.172383 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml> not found
+
+[0m15:10:37.172383 [debug] [MainThread]: Command `dbt debug` failed at 15:10:37.172383 after 0.33 seconds
+[0m15:10:37.172383 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001626DD211F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001626DDF5970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001626D233BF0>]}
+[0m15:10:37.172383 [debug] [MainThread]: Flushing usage events
+[0m15:10:37.301280 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:15:36.052623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002106C7E6DB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002106D21F3B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002106D660F80>]}
+
+
+============================== 15:15:36.062975 | 82144055-cd9a-4ad9-84a4-2406e7339beb ==============================
+[0m15:15:36.062975 [info ] [MainThread]: Running with dbt=1.10.3
+[0m15:15:36.064981 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug --profiles-dir .', 'send_anonymous_usage_stats': 'True'}
+[0m15:15:36.096355 [info ] [MainThread]: dbt version: 1.10.3
+[0m15:15:36.096355 [info ] [MainThread]: python version: 3.12.1
+[0m15:15:36.096355 [info ] [MainThread]: python path: C:\Python312\python.exe
+[0m15:15:36.100517 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:15:36.329380 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m15:15:36.329380 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m15:15:36.429588 [info ] [MainThread]: Using profiles dir at .
+[0m15:15:36.445284 [info ] [MainThread]: Using profiles.yml file at .\profiles.yml
+[0m15:15:36.445284 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml
+[0m15:15:36.445284 [info ] [MainThread]: adapter type: redshift
+[0m15:15:36.445284 [info ] [MainThread]: adapter version: 1.9.5
+[0m15:15:36.445284 [info ] [MainThread]: Configuration:
+[0m15:15:36.451163 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:15:36.452163 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:15:36.453201 [info ] [MainThread]: Required dependencies:
+[0m15:15:36.454350 [debug] [MainThread]: Executing "git --help"
+[0m15:15:36.486061 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:15:36.486061 [debug] [MainThread]: STDERR: "b''"
+[0m15:15:36.488889 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:15:36.489935 [info ] [MainThread]: Connection:
+[0m15:15:36.489935 [info ] [MainThread]:   host: nba-workgroup.565689723912.us-east-1.redshift-serverless.amazonaws.com
+[0m15:15:36.489935 [info ] [MainThread]:   user: anything
+[0m15:15:36.489935 [info ] [MainThread]:   port: 5439
+[0m15:15:36.489935 [info ] [MainThread]:   database: dev
+[0m15:15:36.489935 [info ] [MainThread]:   method: iam
+[0m15:15:36.489935 [info ] [MainThread]:   cluster_id: nba-workgroup
+[0m15:15:36.489935 [info ] [MainThread]:   iam_profile: None
+[0m15:15:36.489935 [info ] [MainThread]:   schema: nba-data
+[0m15:15:36.489935 [info ] [MainThread]:   sslmode: prefer
+[0m15:15:36.489935 [info ] [MainThread]:   region: us-east-1
+[0m15:15:36.489935 [info ] [MainThread]:   sslmode: prefer
+[0m15:15:36.489935 [info ] [MainThread]:   region: us-east-1
+[0m15:15:36.489935 [info ] [MainThread]:   autocreate: False
+[0m15:15:36.489935 [info ] [MainThread]:   db_groups: []
+[0m15:15:36.489935 [info ] [MainThread]:   ra3_node: False
+[0m15:15:36.489935 [info ] [MainThread]:   connect_timeout: None
+[0m15:15:36.489935 [info ] [MainThread]:   role: None
+[0m15:15:36.489935 [info ] [MainThread]:   retries: 1
+[0m15:15:36.489935 [info ] [MainThread]:   retry_all: False
+[0m15:15:36.489935 [info ] [MainThread]:   autocommit: True
+[0m15:15:36.489935 [info ] [MainThread]:   access_key_id: None
+[0m15:15:36.505287 [info ] [MainThread]:   is_serverless: None
+[0m15:15:36.506610 [info ] [MainThread]:   serverless_work_group: None
+[0m15:15:36.506610 [info ] [MainThread]:   serverless_acct_id: None
+[0m15:15:36.506610 [info ] [MainThread]: Registered adapter: redshift=1.9.5
+[0m15:15:36.848913 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m15:15:36.848913 [debug] [MainThread]: Using redshift connection "debug"
+[0m15:15:36.848913 [debug] [MainThread]: On debug: select 1 as id
+[0m15:15:36.848913 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:15:36.848913 [debug] [MainThread]: Redshift adapter: Connecting to Redshift with 'iam' credentials method
+[0m15:15:36.864614 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m15:15:39.044695 [debug] [MainThread]: Redshift adapter: Error running SQL: select 1 as id
+[0m15:15:39.044695 [debug] [MainThread]: Redshift adapter: Rolling back transaction.
+[0m15:15:39.044695 [debug] [MainThread]: Redshift adapter: Not retrying error: Database Error
+  Unable to locate credentials
+[0m15:15:39.044695 [debug] [MainThread]: On debug: No close available on handle
+[0m15:15:39.044695 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m15:15:39.044695 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:15:39.044695 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml> not found
+
+[0m15:15:39.044695 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Unable to locate credentials
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:15:39.044695 [debug] [MainThread]: Command `dbt debug` failed at 15:15:39.044695 after 3.19 seconds
+[0m15:15:39.044695 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:15:39.044695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002106D9AF8F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002106CFA3500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002106D7232C0>]}
+[0m15:15:39.044695 [debug] [MainThread]: Flushing usage events
+[0m15:15:39.140648 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:20:25.248215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D35BD42570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D35EA07170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D35E756F30>]}
+
+
+============================== 15:20:25.255686 | 808d376c-30a4-4888-886a-7ba77f6c965a ==============================
+[0m15:20:25.255686 [info ] [MainThread]: Running with dbt=1.10.3
+[0m15:20:25.258912 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:/Users/chris/Downloads/NBAProject/NBA-database/transform', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:20:25.292212 [info ] [MainThread]: dbt version: 1.10.3
+[0m15:20:25.292212 [info ] [MainThread]: python version: 3.12.1
+[0m15:20:25.295851 [info ] [MainThread]: python path: C:\Python312\python.exe
+[0m15:20:25.296854 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:20:25.507104 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m15:20:25.507104 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m15:20:25.612592 [info ] [MainThread]: Using profiles dir at C:/Users/chris/Downloads/NBAProject/NBA-database/transform
+[0m15:20:25.612592 [info ] [MainThread]: Using profiles.yml file at C:/Users/chris/Downloads/NBAProject/NBA-database/transform\profiles.yml
+[0m15:20:25.612592 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml
+[0m15:20:25.612592 [info ] [MainThread]: adapter type: redshift
+[0m15:20:25.612592 [info ] [MainThread]: adapter version: 1.9.5
+[0m15:20:25.612592 [info ] [MainThread]: Configuration:
+[0m15:20:25.619453 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:20:25.620421 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:20:25.621424 [info ] [MainThread]: Required dependencies:
+[0m15:20:25.621887 [debug] [MainThread]: Executing "git --help"
+[0m15:20:25.649330 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:20:25.649330 [debug] [MainThread]: STDERR: "b''"
+[0m15:20:25.649330 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:20:25.658715 [info ] [MainThread]: Connection:
+[0m15:20:25.658715 [info ] [MainThread]:   host: nba-workgroup.565689723912.us-east-1.redshift-serverless.amazonaws.com
+[0m15:20:25.658715 [info ] [MainThread]:   user: anything
+[0m15:20:25.658715 [info ] [MainThread]:   port: 5439
+[0m15:20:25.662452 [info ] [MainThread]:   database: dev
+[0m15:20:25.663455 [info ] [MainThread]:   method: iam
+[0m15:20:25.664220 [info ] [MainThread]:   cluster_id: nba-workgroup
+[0m15:20:25.664220 [info ] [MainThread]:   iam_profile: None
+[0m15:20:25.664220 [info ] [MainThread]:   schema: nba-data
+[0m15:20:25.664220 [info ] [MainThread]:   sslmode: prefer
+[0m15:20:25.664220 [info ] [MainThread]:   region: us-east-1
+[0m15:20:25.668816 [info ] [MainThread]:   sslmode: prefer
+[0m15:20:25.668816 [info ] [MainThread]:   region: us-east-1
+[0m15:20:25.668816 [info ] [MainThread]:   autocreate: False
+[0m15:20:25.668816 [info ] [MainThread]:   db_groups: []
+[0m15:20:25.668816 [info ] [MainThread]:   ra3_node: False
+[0m15:20:25.672133 [info ] [MainThread]:   connect_timeout: None
+[0m15:20:25.673137 [info ] [MainThread]:   role: None
+[0m15:20:25.673137 [info ] [MainThread]:   retries: 1
+[0m15:20:25.673137 [info ] [MainThread]:   retry_all: False
+[0m15:20:25.675055 [info ] [MainThread]:   autocommit: True
+[0m15:20:25.675055 [info ] [MainThread]:   access_key_id: None
+[0m15:20:25.675055 [info ] [MainThread]:   is_serverless: None
+[0m15:20:25.675055 [info ] [MainThread]:   serverless_work_group: None
+[0m15:20:25.677060 [info ] [MainThread]:   serverless_acct_id: None
+[0m15:20:25.677060 [info ] [MainThread]: Registered adapter: redshift=1.9.5
+[0m15:20:25.986995 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m15:20:25.986995 [debug] [MainThread]: Using redshift connection "debug"
+[0m15:20:25.986995 [debug] [MainThread]: On debug: select 1 as id
+[0m15:20:25.986995 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:20:25.986995 [debug] [MainThread]: Redshift adapter: Connecting to Redshift with 'iam' credentials method
+[0m15:20:25.986995 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m15:20:28.179271 [debug] [MainThread]: Redshift adapter: Error running SQL: select 1 as id
+[0m15:20:28.179271 [debug] [MainThread]: Redshift adapter: Rolling back transaction.
+[0m15:20:28.179271 [debug] [MainThread]: Redshift adapter: Not retrying error: Database Error
+  Unable to locate credentials
+[0m15:20:28.179271 [debug] [MainThread]: On debug: No close available on handle
+[0m15:20:28.179271 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m15:20:28.179271 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:20:28.179271 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml> not found
+
+[0m15:20:28.179271 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Unable to locate credentials
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:20:28.179271 [debug] [MainThread]: Command `dbt debug` failed at 15:20:28.179271 after 3.13 seconds
+[0m15:20:28.179271 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:20:28.179271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D35EF3D730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3604C7D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D35FFD2AE0>]}
+[0m15:20:28.179271 [debug] [MainThread]: Flushing usage events
+[0m15:20:28.311902 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:24:50.550051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243DCC924B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243E03F7AA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243DCBCF140>]}
+
+
+============================== 15:24:50.553127 | aa37c9e3-c9fd-4932-8af7-22c026122a76 ==============================
+[0m15:24:50.553127 [info ] [MainThread]: Running with dbt=1.10.3
+[0m15:24:50.553127 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\chris\\Downloads\\NBAProject\\NBA-database\\transform', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:24:50.579370 [info ] [MainThread]: dbt version: 1.10.3
+[0m15:24:50.579370 [info ] [MainThread]: python version: 3.12.1
+[0m15:24:50.579370 [info ] [MainThread]: python path: C:\Python312\python.exe
+[0m15:24:50.579370 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:24:50.782419 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m15:24:50.782419 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m15:24:50.830115 [info ] [MainThread]: Using profiles dir at C:\Users\chris\Downloads\NBAProject\NBA-database\transform
+[0m15:24:50.830115 [info ] [MainThread]: Using profiles.yml file at C:\Users\chris\Downloads\NBAProject\NBA-database\transform\profiles.yml
+[0m15:24:50.830115 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml
+[0m15:24:50.830115 [info ] [MainThread]: adapter type: redshift
+[0m15:24:50.830115 [info ] [MainThread]: adapter version: 1.9.5
+[0m15:24:50.845764 [info ] [MainThread]: Configuration:
+[0m15:24:50.845764 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:24:50.845764 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:24:50.845764 [info ] [MainThread]: Required dependencies:
+[0m15:24:50.848801 [debug] [MainThread]: Executing "git --help"
+[0m15:24:50.890652 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:24:50.890652 [debug] [MainThread]: STDERR: "b''"
+[0m15:24:50.890652 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:24:50.890652 [info ] [MainThread]: Connection:
+[0m15:24:50.890652 [info ] [MainThread]:   host: nba-workgroup.565689723912.us-east-1.redshift-serverless.amazonaws.com
+[0m15:24:50.890652 [info ] [MainThread]:   user: anything
+[0m15:24:50.890652 [info ] [MainThread]:   port: 5439
+[0m15:24:50.899717 [info ] [MainThread]:   database: dev
+[0m15:24:50.899717 [info ] [MainThread]:   method: iam
+[0m15:24:50.899717 [info ] [MainThread]:   cluster_id: nba-workgroup
+[0m15:24:50.899717 [info ] [MainThread]:   iam_profile: None
+[0m15:24:50.902989 [info ] [MainThread]:   schema: nba-data
+[0m15:24:50.903381 [info ] [MainThread]:   sslmode: prefer
+[0m15:24:50.903381 [info ] [MainThread]:   region: us-east-1
+[0m15:24:50.903381 [info ] [MainThread]:   sslmode: prefer
+[0m15:24:50.903381 [info ] [MainThread]:   region: us-east-1
+[0m15:24:50.903381 [info ] [MainThread]:   autocreate: False
+[0m15:24:50.903381 [info ] [MainThread]:   db_groups: []
+[0m15:24:50.903381 [info ] [MainThread]:   ra3_node: False
+[0m15:24:50.903381 [info ] [MainThread]:   connect_timeout: None
+[0m15:24:50.903381 [info ] [MainThread]:   role: None
+[0m15:24:50.903381 [info ] [MainThread]:   retries: 1
+[0m15:24:50.903381 [info ] [MainThread]:   retry_all: False
+[0m15:24:50.903381 [info ] [MainThread]:   autocommit: True
+[0m15:24:50.903381 [info ] [MainThread]:   access_key_id: None
+[0m15:24:50.903381 [info ] [MainThread]:   is_serverless: None
+[0m15:24:50.903381 [info ] [MainThread]:   serverless_work_group: None
+[0m15:24:50.903381 [info ] [MainThread]:   serverless_acct_id: None
+[0m15:24:50.903381 [info ] [MainThread]: Registered adapter: redshift=1.9.5
+[0m15:24:51.148291 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m15:24:51.148291 [debug] [MainThread]: Using redshift connection "debug"
+[0m15:24:51.148291 [debug] [MainThread]: On debug: select 1 as id
+[0m15:24:51.148291 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:24:51.148291 [debug] [MainThread]: Redshift adapter: Connecting to Redshift with 'iam' credentials method
+[0m15:24:51.148291 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m15:24:53.321722 [debug] [MainThread]: Redshift adapter: Error running SQL: select 1 as id
+[0m15:24:53.323728 [debug] [MainThread]: Redshift adapter: Rolling back transaction.
+[0m15:24:53.325016 [debug] [MainThread]: Redshift adapter: Not retrying error: Database Error
+  Unable to locate credentials
+[0m15:24:53.325575 [debug] [MainThread]: On debug: No close available on handle
+[0m15:24:53.325575 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m15:24:53.335595 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:24:53.338647 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml> not found
+
+[0m15:24:53.340188 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Unable to locate credentials
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:24:53.341943 [debug] [MainThread]: Command `dbt debug` failed at 15:24:53.341943 after 2.94 seconds
+[0m15:24:53.343363 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:24:53.345933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243DFC428A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243E2083530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243E06BE720>]}
+[0m15:24:53.347221 [debug] [MainThread]: Flushing usage events
+[0m15:24:53.427742 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:27:23.362362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B260724B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B281F0B30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B28230620>]}
+
+
+============================== 14:27:23.362362 | 1756ceb9-8df2-49f2-8bcc-4f5875a17d1f ==============================
+[0m14:27:23.362362 [info ] [MainThread]: Running with dbt=1.10.3
+[0m14:27:23.362362 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\chris\\Downloads\\NBAProject\\NBA-database\\transform', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m14:27:23.397708 [info ] [MainThread]: dbt version: 1.10.3
+[0m14:27:23.397708 [info ] [MainThread]: python version: 3.12.1
+[0m14:27:23.397708 [info ] [MainThread]: python path: C:\Python312\python.exe
+[0m14:27:23.397708 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m14:27:23.579353 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m14:27:23.579353 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m14:27:23.642177 [info ] [MainThread]: Using profiles dir at C:\Users\chris\Downloads\NBAProject\NBA-database\transform
+[0m14:27:23.642177 [info ] [MainThread]: Using profiles.yml file at C:\Users\chris\Downloads\NBAProject\NBA-database\transform\profiles.yml
+[0m14:27:23.642177 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml
+[0m14:27:23.642177 [info ] [MainThread]: adapter type: redshift
+[0m14:27:23.642177 [info ] [MainThread]: adapter version: 1.9.5
+[0m14:27:23.642177 [info ] [MainThread]: Configuration:
+[0m14:27:23.642177 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:27:23.642177 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:27:23.650500 [info ] [MainThread]: Required dependencies:
+[0m14:27:23.650500 [debug] [MainThread]: Executing "git --help"
+[0m14:27:23.669654 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:27:23.669654 [debug] [MainThread]: STDERR: "b''"
+[0m14:27:23.669654 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:27:23.669654 [info ] [MainThread]: Connection:
+[0m14:27:23.669654 [info ] [MainThread]:   host: nba-workgroup.565689723912.us-east-1.redshift-serverless.amazonaws.com
+[0m14:27:23.669654 [info ] [MainThread]:   user: anything
+[0m14:27:23.669654 [info ] [MainThread]:   port: 5439
+[0m14:27:23.669654 [info ] [MainThread]:   database: dev
+[0m14:27:23.669654 [info ] [MainThread]:   method: iam
+[0m14:27:23.669654 [info ] [MainThread]:   cluster_id: nba-workgroup
+[0m14:27:23.669654 [info ] [MainThread]:   iam_profile: None
+[0m14:27:23.669654 [info ] [MainThread]:   schema: nba-data
+[0m14:27:23.669654 [info ] [MainThread]:   sslmode: prefer
+[0m14:27:23.669654 [info ] [MainThread]:   region: us-east-1
+[0m14:27:23.669654 [info ] [MainThread]:   sslmode: prefer
+[0m14:27:23.669654 [info ] [MainThread]:   region: us-east-1
+[0m14:27:23.669654 [info ] [MainThread]:   autocreate: False
+[0m14:27:23.669654 [info ] [MainThread]:   db_groups: []
+[0m14:27:23.680339 [info ] [MainThread]:   ra3_node: False
+[0m14:27:23.681000 [info ] [MainThread]:   connect_timeout: None
+[0m14:27:23.681000 [info ] [MainThread]:   role: None
+[0m14:27:23.681000 [info ] [MainThread]:   retries: 1
+[0m14:27:23.681000 [info ] [MainThread]:   retry_all: False
+[0m14:27:23.681000 [info ] [MainThread]:   autocommit: True
+[0m14:27:23.681000 [info ] [MainThread]:   access_key_id: None
+[0m14:27:23.681000 [info ] [MainThread]:   is_serverless: None
+[0m14:27:23.684581 [info ] [MainThread]:   serverless_work_group: None
+[0m14:27:23.684581 [info ] [MainThread]:   serverless_acct_id: None
+[0m14:27:23.684581 [info ] [MainThread]: Registered adapter: redshift=1.9.5
+[0m14:27:23.895761 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m14:27:23.895761 [debug] [MainThread]: Using redshift connection "debug"
+[0m14:27:23.895761 [debug] [MainThread]: On debug: select 1 as id
+[0m14:27:23.895761 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:27:23.895761 [debug] [MainThread]: Redshift adapter: Connecting to Redshift with 'iam' credentials method
+[0m14:27:23.911851 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m14:27:26.059496 [debug] [MainThread]: Redshift adapter: Error running SQL: select 1 as id
+[0m14:27:26.059496 [debug] [MainThread]: Redshift adapter: Rolling back transaction.
+[0m14:27:26.059496 [debug] [MainThread]: Redshift adapter: Not retrying error: Database Error
+  Unable to locate credentials
+[0m14:27:26.061503 [debug] [MainThread]: On debug: No close available on handle
+[0m14:27:26.061503 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m14:27:26.063533 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m14:27:26.064035 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml> not found
+
+[0m14:27:26.065689 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Unable to locate credentials
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:27:26.067788 [debug] [MainThread]: Command `dbt debug` failed at 14:27:26.067112 after 2.86 seconds
+[0m14:27:26.067788 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:27:26.068836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B2979F680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B2B4627B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B2AAF2E40>]}
+[0m14:27:26.068836 [debug] [MainThread]: Flushing usage events
+[0m14:27:26.137267 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:41:34.075350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023ED229D5B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023ED21512E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023ED2153E60>]}
+
+
+============================== 14:41:34.085417 | 14951006-2eb0-40b9-800a-2aa447c98d10 ==============================
+[0m14:41:34.085417 [info ] [MainThread]: Running with dbt=1.10.3
+[0m14:41:34.085417 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\chris\\Downloads\\NBAProject\\NBA-database\\transform', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:41:34.111595 [info ] [MainThread]: dbt version: 1.10.3
+[0m14:41:34.112264 [info ] [MainThread]: python version: 3.12.1
+[0m14:41:34.112264 [info ] [MainThread]: python path: C:\Python312\python.exe
+[0m14:41:34.112264 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m14:41:34.285803 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m14:41:34.285803 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m14:41:34.343818 [info ] [MainThread]: Using profiles dir at C:\Users\chris\Downloads\NBAProject\NBA-database\transform
+[0m14:41:34.343818 [info ] [MainThread]: Using profiles.yml file at C:\Users\chris\Downloads\NBAProject\NBA-database\transform\profiles.yml
+[0m14:41:34.349437 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml
+[0m14:41:34.349437 [info ] [MainThread]: adapter type: redshift
+[0m14:41:34.349437 [info ] [MainThread]: adapter version: 1.9.5
+[0m14:41:34.349437 [info ] [MainThread]: Configuration:
+[0m14:41:34.349437 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:41:34.349437 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:41:34.355341 [info ] [MainThread]: Required dependencies:
+[0m14:41:34.355341 [debug] [MainThread]: Executing "git --help"
+[0m14:41:34.391589 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:41:34.391589 [debug] [MainThread]: STDERR: "b''"
+[0m14:41:34.391589 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:41:34.394724 [info ] [MainThread]: Connection:
+[0m14:41:34.394724 [info ] [MainThread]:   host: nba-workgroup.565689723912.us-east-1.redshift-serverless.amazonaws.com
+[0m14:41:34.394724 [info ] [MainThread]:   user: anything
+[0m14:41:34.394724 [info ] [MainThread]:   port: 5439
+[0m14:41:34.394724 [info ] [MainThread]:   database: dev
+[0m14:41:34.394724 [info ] [MainThread]:   method: iam
+[0m14:41:34.394724 [info ] [MainThread]:   cluster_id: nba-workgroup
+[0m14:41:34.399180 [info ] [MainThread]:   iam_profile: None
+[0m14:41:34.399180 [info ] [MainThread]:   schema: nba-data
+[0m14:41:34.400471 [info ] [MainThread]:   sslmode: prefer
+[0m14:41:34.401955 [info ] [MainThread]:   region: us-east-1
+[0m14:41:34.402795 [info ] [MainThread]:   sslmode: prefer
+[0m14:41:34.402795 [info ] [MainThread]:   region: us-east-1
+[0m14:41:34.404800 [info ] [MainThread]:   autocreate: False
+[0m14:41:34.404800 [info ] [MainThread]:   db_groups: []
+[0m14:41:34.404800 [info ] [MainThread]:   ra3_node: False
+[0m14:41:34.404800 [info ] [MainThread]:   connect_timeout: None
+[0m14:41:34.404800 [info ] [MainThread]:   role: None
+[0m14:41:34.404800 [info ] [MainThread]:   retries: 1
+[0m14:41:34.404800 [info ] [MainThread]:   retry_all: False
+[0m14:41:34.404800 [info ] [MainThread]:   autocommit: True
+[0m14:41:34.404800 [info ] [MainThread]:   access_key_id: None
+[0m14:41:34.404800 [info ] [MainThread]:   is_serverless: None
+[0m14:41:34.404800 [info ] [MainThread]:   serverless_work_group: None
+[0m14:41:34.404800 [info ] [MainThread]:   serverless_acct_id: None
+[0m14:41:34.404800 [info ] [MainThread]: Registered adapter: redshift=1.9.5
+[0m14:41:34.632702 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m14:41:34.632702 [debug] [MainThread]: Using redshift connection "debug"
+[0m14:41:34.632702 [debug] [MainThread]: On debug: select 1 as id
+[0m14:41:34.632702 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:41:34.632702 [debug] [MainThread]: Redshift adapter: Connecting to Redshift with 'iam' credentials method
+[0m14:41:34.632702 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m14:41:35.122896 [debug] [MainThread]: Redshift adapter: Error running SQL: select 1 as id
+[0m14:41:35.122896 [debug] [MainThread]: Redshift adapter: Rolling back transaction.
+[0m14:41:35.122896 [debug] [MainThread]: Redshift adapter: Not retrying error: Database Error
+  An error occurred (AccessDeniedException) when calling the GetCredentials operation: User: arn:aws:iam::565689723912:user/nba-bucket-collaborator is not authorized to perform: redshift-serverless:GetCredentials on resource: arn:aws:redshift-serverless:us-east-1:565689723912:workgroup/b9f2f0f9-4c65-4c94-af8b-2de02dcb5ada because no identity-based policy allows the redshift-serverless:GetCredentials action
+[0m14:41:35.122896 [debug] [MainThread]: On debug: No close available on handle
+[0m14:41:35.122896 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m14:41:35.122896 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m14:41:35.122896 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\chris\Downloads\NBAProject\NBA-database\transform\dbt_project.yml> not found
+
+[0m14:41:35.122896 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  An error occurred (AccessDeniedException) when calling the GetCredentials operation: User: arn:aws:iam::565689723912:user/nba-bucket-collaborator is not authorized to perform: redshift-serverless:GetCredentials on resource: arn:aws:redshift-serverless:us-east-1:565689723912:workgroup/b9f2f0f9-4c65-4c94-af8b-2de02dcb5ada because no identity-based policy allows the redshift-serverless:GetCredentials action
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:41:35.122896 [debug] [MainThread]: Command `dbt debug` failed at 14:41:35.122896 after 1.16 seconds
+[0m14:41:35.130912 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:41:35.130912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023ECEC7F020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023ED1E2F470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023ED4196720>]}
+[0m14:41:35.130912 [debug] [MainThread]: Flushing usage events
+[0m14:41:35.219785 [debug] [MainThread]: An error was encountered while trying to flush usage events

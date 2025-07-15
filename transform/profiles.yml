@@ -1,0 +1,15 @@
+nba_project:
+  target: dev
+  outputs:
+    dev:
+      type: redshift
+      method: iam
+      cluster_id: nba-workgroup
+      host: nba-workgroup.565689723912.us-east-1.redshift-serverless.amazonaws.com
+      user: anything
+      database: dev
+      schema: nba-data
+      threads: 1
+      region: us-east-1
+      iam_role: arn:aws:iam::565689723912:role/dbt_redshift_access
+      port: 5439

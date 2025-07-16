@@ -1,0 +1,37 @@
+version: 2
+
+sources:
+  - name: raw
+    database: dev      
+    schema: spectrum_nba 
+    tables:
+      - name: teams_ext
+        description: "Raw NBA teams data loaded directly from S3 as an external table."
+        columns:
+          - name: id
+            data_type: STRING
+            description: "Unique team identifier"
+          - name: conference
+            data_type: STRING
+            description: "Team conference (East/West)"
+          - name: division
+            data_type: STRING
+            description: "Team division"
+          - name: city
+            data_type: STRING
+            description: "Home city"
+          - name: name
+            data_type: STRING
+            description: "Team name"
+          - name: full_name
+            data_type: STRING
+            description: "Full team name"
+          - name: abbreviation
+            data_type: STRING
+            description: "3-letter team code"
+        external:
+          location: 's3://nba-csv-bucket/nba_data/'  
+          file_format: textfile                       
+          delimiter: ','                              
+          header_row: true   
+

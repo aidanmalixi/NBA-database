@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: hello_test
+  - name: hello
     description: "A simple test model that returns hello."
     columns:
       - name: message
